@@ -2,27 +2,27 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
+      "src": "./img/feather-pen-1.png",
       "title": "Front-End",
-      "description": "HTML, CSS, JavaScript, React"
+      "description": "HTML"
     },
     {
       "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/product-chain-1.png",
+      "title": "Version Control",
+      "description": "GitHub, Git"
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/tag-1.png",
+      "title": "Text Editors/IDEs",
+      "description": "Visual Studio Code, Jupyter Notebook."
     },
     {
       "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/feather-pen-2.png",
+      "title": "Soft Skills",
+      "description": "Communication, Testing and QA, User-Centric Focus, Time Management "
     }
   ],
   "portfolio": [
