@@ -140,7 +140,7 @@ h2 {
 /* Section Titles */
 /* Skills & About Me */
 .section--title {
-  color: var(--heading-color);
+  color: var(--bg-shade);
   font-size: 21px;
   text-align: center;
   font-style: normal;
@@ -163,8 +163,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 85.333px;
-  background: var(--white);
+  padding: 20px 85.333px;
+  background: var(--bg-shade);
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -203,11 +203,13 @@ h2 {
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
+  padding: 100.333px 85.333px 3px;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background-color: white;
+  background-image: url("./asset//back3\ copy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero--section--content-box {
   display: flex;
@@ -225,17 +227,17 @@ h2 {
   margin-top: 21.333px;
 }
 .hero--section--title {
-  color: var(--heading-color);
+  color: var(--primary);
   font-size: 74.667px;
   font-weight: 700;
   line-height: 90px;
   align-self: stretch;
 }
 .hero--section--title--color {
-  color: var(--primary);
+  color: yellowgreen;
 }
 .hero--section-description {
-  color: var(--darkblue);
+  color: var(--white);
   font-size: 20px;
   font-weight: 500;
   line-height: 33px;
@@ -244,12 +246,13 @@ h2 {
   display: flex;
 }
 .hero--section--img > img {
-  width: 30vw;
+  width: 100%;
   border-radius: 100px;
   border-width: 10px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   border-color: var(--primary);
-  padding-left: 100px;
+  padding-left: 50px;
+  
 }
 /* Hero Section Style Ends */
 
@@ -261,6 +264,9 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 50px;
+  background-image: url('./asset/web\ backg1\ copy.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .skills--section--heading {
   color: var(--primary);
@@ -281,11 +287,12 @@ h2 {
   gap: 32px;
   flex: 1 0 0;
   border-radius: 10.6px;
-  background: var(--white);
+  background: ghostwhite;
   min-height: 250px;
 }
 .skills--section--card:hover {
   border-bottom: 4px solid var(--primary);
+  background-color: whitesmoke;
 }
 .skills--section--card:hover .skills--section--description {
   color: var(--darkblue);
@@ -334,14 +341,30 @@ h2 {
   gap: 70px;
   padding: 80px;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: white;
+  margin-top: 100px;
+}
 
+.about--section--heading {
+  color: var(--primary);
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.about--section--description {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
 }
 .about--section--img > img {
-  width: 25vw;
+  width: 35vw;
   border-radius: 10px;
   border-width: 1px;
-  background-color: whitesmoke;
+  background-image: url('./asset/circle\ copy.svg');
+  background-repeat: no-repeat;
+  background-size: 35rem;
   border-color: var(--primary);
 }
 /* About Us Ends */

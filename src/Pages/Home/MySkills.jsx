@@ -12,7 +12,7 @@ const MySkills = () => {
       <div className="skills--section--container">
         <div className="skills--section--card">
           <div className="skills--section--img">
-            <h3 className="skills--section--title">Front-End Technologies</h3>
+            <h3 className="skills--section--title">Front-End</h3>
           </div>
           <div className="skills--section--card--content">
             <ul className="skills--section--description">
