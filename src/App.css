@@ -252,7 +252,6 @@ h2 {
   /* background-color: whitesmoke; */
   border-color: var(--primary);
   padding-left: 50px;
-  
 }
 /* Hero Section Style Ends */
 
@@ -263,10 +262,10 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 50px;
-  background-image: url('./asset/web\ backg1\ copy.jpeg');
-  background-repeat: no-repeat;
+  gap: 90px;
+  background-image: url("./asset/bgIMG\ copy.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .skills--section--heading {
   color: var(--primary);
@@ -278,22 +277,20 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 100.6px;
- 
 }
 .skills--section--card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  flex: 1 0 0;
   border-radius: 10.6px;
-  background: ghostwhite;
-  min-height: 250px;
+  min-height: 270px;
+  padding-bottom: 20px;
 }
-.skills--section--card:hover {
+/* .skills--section--card:hover {
   border-bottom: 4px solid var(--primary);
   background-color: whitesmoke;
-}
+} */
 .skills--section--card:hover .skills--section--description {
   color: var(--darkblue);
 }
@@ -302,22 +299,21 @@ h2 {
   padding: 5px;
   justify-content: center;
   align-items: center;
-  gap: 13.3px;
   border-radius: 10.6px;
-  background: #fff;
+
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-  width: 20vw;
+  width: 255px;
   text-align: center;
 }
 .skills--section--card--content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 32px;
   align-self: stretch;
 }
 .skills--section--title {
-  color: var(--heading-color);
+  color: blue;
   font-size: 32px;
   font-weight: 700;
   line-height: 45px;
@@ -331,7 +327,23 @@ h2 {
 }
 
 .skills--section--list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
   list-style: none;
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+.skills--section--icon:hover {
+  margin-left: 30px;
+}
+
+.skills--section--icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
 }
 /* Skills Style Ends */
 
@@ -362,7 +374,7 @@ h2 {
   width: 35vw;
   border-radius: 10px;
   border-width: 1px;
-  background-image: url('./asset/circle\ copy.svg');
+  background-image: url("./asset/circle\ copy.svg");
   background-repeat: no-repeat;
   background-size: 35rem;
   border-color: var(--primary);

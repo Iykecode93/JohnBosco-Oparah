@@ -35,18 +35,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="logo-nav">
-        <Link
-          nClick={closeMenu}
-          activeClass="navbar--active-content"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          to="heroSection"
-          className="navbar--content"
-        >
           <h3>iykode..</h3>
-        </Link>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}

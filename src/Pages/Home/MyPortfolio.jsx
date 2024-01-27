@@ -1,12 +1,12 @@
 import data from "../../data/index.json";
+import React from 'react'
 
-export default function MyPortfolio() {
+const MyPortfolio = () => {
   return (
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <h2 className="about--section--heading">Projects</h2>
         </div>
         <div>
           <button className="btn btn-github">
@@ -62,5 +62,7 @@ export default function MyPortfolio() {
         ))}
       </div>
     </section>
-  );
+  )
 }
+
+export default MyPortfolio

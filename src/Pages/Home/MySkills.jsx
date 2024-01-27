@@ -1,5 +1,16 @@
 import React from "react";
-import image from "../../asset/feather-pen-1 copy.png";
+import html from "../../asset/html copy.png";
+import css from "../../asset/css copy.png";
+import javaScript from "../../asset/javascript copy.png";
+import react from "../../asset/react copy.png";
+import git from "../../asset/git copy.png";
+import vsc from "../../asset/visual-studio-code-logo-png-transparent.png";
+import noteBook from "../../asset/NicePng_python-logo-png_701999.png";
+import communicate from "../../asset/—Pngtree—communication icon_3607861.png";
+import creativity from "../../asset/pngaaa.com-3504579.png";
+import learning from "../../asset/pngkey.com-brains-png-1149736.png";
+import testing from "../../asset/testing.png";
+
 // import data from "../../data/index./json";
 
 const MySkills = () => {
@@ -15,42 +26,26 @@ const MySkills = () => {
             <h3 className="skills--section--title">Front-End</h3>
           </div>
           <div className="skills--section--card--content">
-            <ul className="skills--section--description">
-              <li className="skills--section--list">
-                <img src={image} alt="" /> HTML
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> CSS
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> JavaScript
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> React
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="skills--section--card">
-          <div className="skills--section--img">
-            <h3 className="skills--section--title">Version Control</h3>
-          </div>
-          <div className="skills--section--card--content">
-            <ul className="skills--section--description">
-              <li className="skills--section--list">
-                <img src={image} alt="" /> HTML
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> CSS
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> JavaScript
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> React
-              </li>
-            </ul>
+            <div className="skills--section--description">
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={html} alt="" /> HTML
+              </div>
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={css} alt="" /> CSS
+              </div>
+              <div className="skills--section--list">
+                <img
+                  className="skills--section--icon"
+                  src={javaScript}
+                  alt=""
+                />{" "}
+                JavaScript
+              </div>
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={react} alt="" />{" "}
+                React
+              </div>
+            </div>
           </div>
         </div>
 
@@ -59,42 +54,51 @@ const MySkills = () => {
             <h3 className="skills--section--title">Text Editors/IDEs</h3>
           </div>
           <div className="skills--section--card--content">
-            <ul className="skills--section--description">
-              <li className="skills--section--list">
-                <img src={image} alt="" /> HTML
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> CSS
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> JavaScript
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> React
-              </li>
-            </ul>
+            <div className="skills--section--description">
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={vsc} alt="" /> VS
+                Code
+              </div>
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={noteBook} alt="" /> Jupter Notebook
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="skills--section--card">
           <div className="skills--section--img">
-            <h3 className="skills--section--title">Soft Skills</h3>
+            <h3 className="skills--section--title">Version Control</h3>
           </div>
           <div className="skills--section--card--content">
-            <ul className="skills--section--description">
-              <li className="skills--section--list">
-                <img src={image} alt="" /> HTML
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> CSS
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> JavaScript
-              </li>
-              <li className="skills--section--list">
-                <img src={image} alt="" /> React
-              </li>
-            </ul>
+            <div className="skills--section--description">
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={git} alt="" /> Git
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div className="skills--section--card">
+          <div className="skills--section--img">
+            <h3 className="skills--section--title">Soft Skill</h3>
+          </div>
+          <div className="skills--section--card--content">
+            <div className="skills--section--description">
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={communicate} alt="" />Communication
+              </div>
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={creativity} alt="" /> Creativity
+              </div>
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={learning} alt="" />Continuous Learning
+              </div>
+              <div className="skills--section--list">
+                <img className="skills--section--icon" src={testing} alt="" />Testing and QA
+              </div>
+            </div>
           </div>
         </div>
       </div>
