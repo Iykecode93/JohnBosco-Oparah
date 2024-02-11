@@ -1,82 +1,126 @@
-export default function ContactMe() {
+import React, { useState, useRef } from "react";
+import emails from "../../asset/email copy.png";
+import mobile from "../../asset/mobile.png";
+import emailjs from "@emailjs/browser";
+
+const ContactMe = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const { name, email, message } = formData;
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = () => {
+    setLoading(true);
+
+    const contact = {
+      _type: "contact",
+      name: name,
+      email: email,
+      message: message,
+    };
+
+    // emailjs.create(contact)
+    //   .then(() => {
+    //     setLoading(false);
+
+    //   })
+  };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_a69ojoa",
+        "template_anflkjo",
+        form.current,
+        "mQKKubPY-LBrohXwz"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          setLoading(false);
+          setIsFormSubmitted(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section id="Contact" className="contact--section">
-      <div>
-        <p className="sub--title">Get In Touch</p>
-        <h2>Contact Me</h2>
-        <p className="text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
-        </p>
+      
+      {!isFormSubmitted ? (
+        <>
+        <h2 className="contact--section--heading">Hello let's chat</h2>
+      <div className="contact--cards">
+        <div className="contact--card">
+          <img src={emails} alt="email" />
+          <a href="mailto:boscoiyke67@gmail.com" className="p">
+            boscoiyke67@gmail.com
+          </a>
+        </div>
+        <div className="contact--card">
+          <img src={mobile} alt="mobile" />
+          <a href="tel: +234 803-456-9390" className="p">
+            +234 803-456-9390
+          </a>
+        </div>
       </div>
-      <form className="contact--form--container">
-        <div className="container">
-          <label htmlFor="first-name" className="contact--label">
-            <span className="text-md">First Name</span>
+        <form ref={form} onSubmit={sendEmail} className="contact--form--flex">
+          <div>
             <input
+              className="p"
               type="text"
-              className="contact--input text-md"
-              name="first-name"
-              id="first-name"
-              required
+              placeholder="Your Name"
+              name="user_name"
             />
-          </label>
-          <label htmlFor="last-name" className="contact--label">
-            <span className="text-md">Last Name</span>
+          </div>
+          <div>
             <input
-              type="text"
-              className="contact--input text-md"
-              name="last-name"
-              id="last-name"
-              required
-            />
-          </label>
-          <label htmlFor="email" className="contact--label">
-            <span className="text-md">Email</span>
-            <input
+              className="p"
               type="email"
-              className="contact--input text-md"
-              name="email"
-              id="email"
-              required
+              placeholder="Your Email"
+              name="user_email"
             />
-          </label>
-          <label htmlFor="phone-number" className="contact--label">
-            <span className="text-md">phone-number</span>
-            <input
-              type="number"
-              className="contact--input text-md"
-              name="phone-number"
-              id="phone-number"
-              required
+          </div>
+          <div>
+            <textarea
+              className="p"
+              type="email"
+              placeholder="Your Message"
+              name="message"
             />
-          </label>
+          </div>
+
+          <button type="submit" className="p" onClick={handleSubmit}>
+            {loading ? "Sending" : "Send Message"}
+          </button>
+        </form>
+        </>
+      ) : (
+        <div className="contact--message">
+          <h2 className="contact--section--heading">Thank you for getting in touch</h2>
         </div>
-        <label htmlFor="choode-topic" className="contact--label">
-          <span className="text-md">Choose a topic</span>
-          <select id="choose-topic" className="contact--input text-md">
-            <option>Select One...</option>
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
-          </select>
-        </label>
-        <label htmlFor="message" className="contact--label">
-          <span className="text-md">Message</span>
-          <textarea
-            className="contact--input text-md"
-            id="message"
-            rows="8"
-            placeholder="Type your message..."
-          />
-        </label>
-        <label htmlFor="checkboc" className="checkbox--label">
-          <input type="checkbox" required name="checkbox" id="checkbox" />
-          <span className="text-sm">I accept the terms</span>
-        </label>
-        <div>
-          <button className="btn btn-primary contact--form--btn">Submit</button>
-        </div>
-      </form>
+      )}
+      ;
     </section>
   );
-}
+};
+
+export default ContactMe;
