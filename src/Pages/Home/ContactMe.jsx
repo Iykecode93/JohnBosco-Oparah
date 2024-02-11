@@ -118,7 +118,6 @@ const ContactMe = () => {
           <h2 className="contact--section--heading">Thank you for getting in touch</h2>
         </div>
       )}
-      ;
     </section>
   );
 };
