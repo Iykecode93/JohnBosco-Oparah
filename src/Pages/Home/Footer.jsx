@@ -49,7 +49,7 @@ function Footer() {
                 to="Stack"
                 className="text-md"
               >
-                Skills
+                Tech Stack
               </Link>
             </li>
             <li>
