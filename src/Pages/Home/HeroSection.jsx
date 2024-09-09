@@ -5,14 +5,14 @@ import pics from "../../asset/john0 copy.png";
 const HeroSection = () => {
 
   const onButtonClick = () => {
-    fetch("Johnbosco Ikechukwu Oparah Resume copy.pdf").then((response) => {
+    fetch("JOHNBOSCO IKECHUKWU OPARAH FEDev..pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL =
             window.URL.createObjectURL(blob);
 
             let alink = document.createElement("a");
             alink.href = fileURL;
-            alink.download = "Johnbosco Oparah Resume.pdf";
+            alink.download = "JOHNBOSCO I. OPARAH";
             alink.click();
       })
     })

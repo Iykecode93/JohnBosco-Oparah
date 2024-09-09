@@ -4,6 +4,7 @@ import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
+
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
@@ -32,19 +33,6 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="MyPortfolio"
-                className="text-md"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
                 to="AboutMe"
                 className="text-md"
               >
@@ -58,13 +46,39 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                to="Stack"
+                className="text-md"
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="MyPortfolio"
+                className="text-md"
+              >
+                Projects
+              </Link>
+            </li>
+            {/* <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 to="Contact"
                 className="text-md"
               >
                 Contact
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link
                 activeClass="navbar--active-content"
                 spy={true}
@@ -76,7 +90,7 @@ function Footer() {
               >
                 Testimonials
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="footer--social">

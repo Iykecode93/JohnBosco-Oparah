@@ -10,6 +10,7 @@ import communicate from "../../asset/—Pngtree—communication icon_3607861.png
 import creativity from "../../asset/pngaaa.com-3504579.png";
 import learning from "../../asset/pngkey.com-brains-png-1149736.png";
 import testing from "../../asset/testing.png";
+import python from "../../asset/python copy.png";
 
 // import data from "../../data/index./json";
 
@@ -23,7 +24,7 @@ const MySkills = () => {
       <div className="skills--section--container">
         <div className="skills--section--card">
           <div className="skills--section--img">
-            <h3 className="skills--section--title">Front-End</h3>
+            <h3 className="skills--section--title">Front-End Stack</h3>
           </div>
           <div className="skills--section--card--content">
             <div className="skills--section--description">
@@ -90,13 +91,13 @@ const MySkills = () => {
                 <img className="skills--section--icon" src={communicate} alt="" />Communication
               </div>
               <div className="skills--section--list">
-                <img className="skills--section--icon" src={creativity} alt="" /> Creativity
+                <img className="skills--section--icon" src={creativity} alt="" /> Analytical Thinking
               </div>
               <div className="skills--section--list">
                 <img className="skills--section--icon" src={learning} alt="" />Continuous Learning
               </div>
               <div className="skills--section--list">
-                <img className="skills--section--icon" src={testing} alt="" />Testing and QA
+                <img className="skills--section--icon" src={testing} alt="" />Decision Making
               </div>
             </div>
           </div>
