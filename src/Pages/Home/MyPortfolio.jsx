@@ -26,6 +26,45 @@ const MyPortfolio = () => {
       </div>
 
       <div className="portfolio--container-box">
+      <div className="portfolio--section--container">
+          <div className="portfolio--section--card">
+            <div className="portfolio--section--img">
+              <img src={screenshort} alt="" />
+            </div>
+            <div className="portfolio--section--card--content">
+              <div>
+                <h3 className="portfolio--section--title">Mentor-Challenge</h3>
+                <p className="text-md">
+                  Get your team in snyc, no matter your location. Streamline
+                  processes, create team rituals, and watch productivity soar.
+                </p>
+              </div>
+              <div className="view--link">
+                <div className="text-sm portfolio--link">
+                  <img className="btn-github-img--link" src={github} alt="" />
+                  <a
+                    className="portfolio--link--a"
+                    href="https://github.com/Iykecode93/mentor-challenge.git"
+                    target="_blank"
+                  >
+                    <span>gitHub</span>
+                  </a>
+                </div>
+                <div className="text-sm portfolio--link">
+                  <img className="btn-github-img--link" src={eye} alt="" />
+                  <a
+                    className="portfolio--link--a"
+                    href="https://mentor-challenge.vercel.app/"
+                    target="_blank"
+                  >
+                    <span>live</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="portfolio--section--container">
           <div className="portfolio--section--card">
             <div className="portfolio--section--img">
