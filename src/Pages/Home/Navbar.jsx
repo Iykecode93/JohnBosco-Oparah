@@ -87,7 +87,7 @@ function Navbar() {
               to="Stack"
               className="navbar--content"
             >
-              Tech Stack
+              Skills
             </Link>
           </li>
           <li>

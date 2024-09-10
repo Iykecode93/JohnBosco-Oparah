@@ -5,6 +5,7 @@ import screenshort from "../../asset/Screenshot 2024-01-27 at 10.01.08 PM.png";
 import eye from "../../asset/eye-icon-9665.png";
 import echete from "../../asset/Screenshot 2024-01-28 at 12.09.37 AM.png";
 import calc from "../../asset/Screenshot 2024-01-28 at 12.27.49 AM.png";
+import coursemax from "../../asset/Screenshot 2024-09-10 at 7.32.38 PM.png";
 
 const MyPortfolio = () => {
   return (
@@ -26,56 +27,17 @@ const MyPortfolio = () => {
       </div>
 
       <div className="portfolio--container-box">
-      <div className="portfolio--section--container">
-          <div className="portfolio--section--card">
-            <div className="portfolio--section--img">
-              <img src={screenshort} alt="" />
-            </div>
-            <div className="portfolio--section--card--content">
-              <div>
-                <h3 className="portfolio--section--title">Mentor-Challenge</h3>
-                <p className="text-md">
-                  Get your team in snyc, no matter your location. Streamline
-                  processes, create team rituals, and watch productivity soar.
-                </p>
-              </div>
-              <div className="view--link">
-                <div className="text-sm portfolio--link">
-                  <img className="btn-github-img--link" src={github} alt="" />
-                  <a
-                    className="portfolio--link--a"
-                    href="https://github.com/Iykecode93/mentor-challenge.git"
-                    target="_blank"
-                  >
-                    <span>gitHub</span>
-                  </a>
-                </div>
-                <div className="text-sm portfolio--link">
-                  <img className="btn-github-img--link" src={eye} alt="" />
-                  <a
-                    className="portfolio--link--a"
-                    href="https://mentor-challenge.vercel.app/"
-                    target="_blank"
-                  >
-                    <span>live</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="portfolio--section--container">
           <div className="portfolio--section--card">
             <div className="portfolio--section--img">
-              <img src={screenshort} alt="" />
+              <img src={coursemax} alt="" />
             </div>
             <div className="portfolio--section--card--content">
               <div>
-                <h3 className="portfolio--section--title">Mentor-Challenge</h3>
+                <h3 className="portfolio--section--title">CourseMax Academy</h3>
                 <p className="text-md">
-                  Get your team in snyc, no matter your location. Streamline
-                  processes, create team rituals, and watch productivity soar.
+                  Dive into our dynamic online courses and new books monthly.
+                  Elevate your expertise with the latest resources.
                 </p>
               </div>
               <div className="view--link">
@@ -83,7 +45,7 @@ const MyPortfolio = () => {
                   <img className="btn-github-img--link" src={github} alt="" />
                   <a
                     className="portfolio--link--a"
-                    href="https://github.com/Iykecode93/mentor-challenge.git"
+                    
                     target="_blank"
                   >
                     <span>gitHub</span>
@@ -93,7 +55,7 @@ const MyPortfolio = () => {
                   <img className="btn-github-img--link" src={eye} alt="" />
                   <a
                     className="portfolio--link--a"
-                    href="https://mentor-challenge.vercel.app/"
+                    href="https://coursemaxacademy.com/"
                     target="_blank"
                   >
                     <span>live</span>
@@ -153,14 +115,17 @@ const MyPortfolio = () => {
                 <h3 className="portfolio--section--title">Supa Calc.</h3>
                 <p className="text-md">
                   In today's fast-paced world, efficiency and accuracy matter
-                  more than ever. Our state-of-the-art Online
-                  Calculator.
+                  more than ever. Our state-of-the-art Online Calculator.
                 </p>
               </div>
               <div className="view--link">
                 <div className="text-sm portfolio--link">
                   <img className="btn-github-img--link" src={github} alt="" />
-                  <a className="portfolio--link--a" href="https://github.com/Iykecode93/Calculator.git" target="_blank">
+                  <a
+                    className="portfolio--link--a"
+                    href="https://github.com/Iykecode93/Calculator.git"
+                    target="_blank"
+                  >
                     <span>gitHub</span>
                   </a>
                 </div>
@@ -180,39 +145,124 @@ const MyPortfolio = () => {
         </div>
       </div>
 
-      {/* <div className="portfolio--section--container">
-        {data?.portfolio?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
+      <div className="portfolio--container-box">
+        <div className="portfolio--section--container">
+          <div className="portfolio--section--card">
             <div className="portfolio--section--img">
-              <img src={item.src} alt="Placeholder" />
+              <img src={screenshort} alt="" />
             </div>
             <div className="portfolio--section--card--content">
               <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
-                <p className="text-md">{item.description}</p>
+                <h3 className="portfolio--section--title">Mentor-Challenge</h3>
+                <p className="text-md">
+                  Get your team in snyc, no matter your location. Streamline
+                  processes, create team rituals, and watch productivity soar.
+                </p>
               </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
-                >
-                  <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>
+              <div className="view--link">
+                <div className="text-sm portfolio--link">
+                  <img className="btn-github-img--link" src={github} alt="" />
+                  <a
+                    className="portfolio--link--a"
+                    href="https://github.com/Iykecode93/mentor-challenge.git"
+                    target="_blank"
+                  >
+                    <span>gitHub</span>
+                  </a>
+                </div>
+                <div className="text-sm portfolio--link">
+                  <img className="btn-github-img--link" src={eye} alt="" />
+                  <a
+                    className="portfolio--link--a"
+                    href="https://mentor-challenge.vercel.app/"
+                    target="_blank"
+                  >
+                    <span>live</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        ))}
-      </div> */}
+        </div>
+
+        <div className="portfolio--section--container">
+          <div className="portfolio--section--card">
+            <div className="portfolio--section--img">
+              <img src={screenshort} alt="" />
+            </div>
+            <div className="portfolio--section--card--content">
+              <div>
+                <h3 className="portfolio--section--title">Mentor-Challenge</h3>
+                <p className="text-md">
+                  Get your team in snyc, no matter your location. Streamline
+                  processes, create team rituals, and watch productivity soar.
+                </p>
+              </div>
+              <div className="view--link">
+                <div className="text-sm portfolio--link">
+                  <img className="btn-github-img--link" src={github} alt="" />
+                  <a
+                    className="portfolio--link--a"
+                    href="https://github.com/Iykecode93/mentor-challenge.git"
+                    target="_blank"
+                  >
+                    <span>gitHub</span>
+                  </a>
+                </div>
+                <div className="text-sm portfolio--link">
+                  <img className="btn-github-img--link" src={eye} alt="" />
+                  <a
+                    className="portfolio--link--a"
+                    href="https://mentor-challenge.vercel.app/"
+                    target="_blank"
+                  >
+                    <span>live</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio--section--container">
+          <div className="portfolio--section--card">
+            <div className="portfolio--section--img">
+              <img src={screenshort} alt="" />
+            </div>
+            <div className="portfolio--section--card--content">
+              <div>
+                <h3 className="portfolio--section--title">Mentor-Challenge</h3>
+                <p className="text-md">
+                  Get your team in snyc, no matter your location. Streamline
+                  processes, create team rituals, and watch productivity soar.
+                </p>
+              </div>
+              <div className="view--link">
+                <div className="text-sm portfolio--link">
+                  <img className="btn-github-img--link" src={github} alt="" />
+                  <a
+                    className="portfolio--link--a"
+                    href="https://github.com/Iykecode93/mentor-challenge.git"
+                    target="_blank"
+                  >
+                    <span>gitHub</span>
+                  </a>
+                </div>
+                <div className="text-sm portfolio--link">
+                  <img className="btn-github-img--link" src={eye} alt="" />
+                  <a
+                    className="portfolio--link--a"
+                    href="https://mentor-challenge.vercel.app/"
+                    target="_blank"
+                  >
+                    <span>live</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

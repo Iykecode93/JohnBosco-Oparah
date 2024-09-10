@@ -11,20 +11,14 @@ const AboutMe = () => {
         <div className="hero--section--content">
           <h1 className="about--section--heading">About Me</h1>
           <p className="about--section--description">
-            A dynamic and deeply motivated front-end developer, driven by
-            enthusiasm and possessing a robust background in web development,
-            coupled with an insatiable thirst for learning. Armed with two years
-            of hands-on experience in frontend technologies, I'm enthusiastic
-            about making valuable contributions to pioneering projects.
-            Proficient in HTML, CSS, JavaScript and React, and eager to further
-            develop expertise in frameworks like Node.js, C# and other
-            cutting-edge technologies. <br />My strengths lie in adept problem-solving, collaborative skills, and
-            a natural ability to adapt to fresh challenges. I'm unwaveringly
-            committed to delivering top-notch, usercentric web applications
-            while continually honing my skills in the realm of full-stack
-            development.
+            Passionate Software Engineer with 2+ years of experience
+            specializing in front-end development and UI/UX optimization. Adept
+            at delivering high-performance web applications using JavaScript,
+            React.js, and other modern frameworks. <br/> Proven track record of
+            boosting system efficiency, improving user experience, and leading
+            full project lifecycles. Seeking opportunities to apply innovative
+            solutions to complex problems within a dynamic development team.
           </p>
-            
         </div>
       </div>
     </section>
