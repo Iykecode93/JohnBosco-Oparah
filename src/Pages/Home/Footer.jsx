@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 
 function Footer() {
 
@@ -49,7 +50,7 @@ function Footer() {
                 to="Stack"
                 className="text-md"
               >
-                Tech Stack
+                Skills
               </Link>
             </li>
             <li>
@@ -94,6 +95,11 @@ function Footer() {
           </ul>
         </div>
         <div className="footer--social">
+        <div>
+            <a href="https://linkedin.com/in/johnbosco-oparah" target="_blank">
+              <BsLinkedin />
+            </a>
+          </div>
           <div>
             <a href="https://twitter.com/OparahJohnbosco?s=20" target="_blank">
               <BsTwitter />
@@ -102,11 +108,6 @@ function Footer() {
           <div>
             <a href="https://www.facebook.com/john.iyke.35" target="_blank">
               <FaFacebookF />
-            </a>
-          </div>
-          <div>
-            <a href="https://instagram.com/john.iyke.35" target="_blank">
-              <BsInstagram />
             </a>
           </div>
           <div>
