@@ -5,7 +5,7 @@ import pics from "../../asset/john0 copy.png";
 const HeroSection = () => {
 
   const onButtonClick = () => {
-    fetch("JOHNBOSCO I. OPARAH S.Engr..pdf").then((response) => {
+    fetch("JOHNBOSCO IKECHUKWU OPARAH Software Engr..pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL =
             window.URL.createObjectURL(blob);
