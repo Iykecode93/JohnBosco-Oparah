@@ -2,6 +2,7 @@ import data from "../../data/index.json";
 import React from "react";
 import github from "../../asset/github-logo copy 2.png";
 import screenshort from "../../asset/Screenshot 2024-01-27 at 10.01.08 PM.png";
+import school from "../../asset/Screenshot 2025-02-12 at 11.03.56 AM.png";
 import eye from "../../asset/eye-icon-9665.png";
 import echete from "../../asset/Screenshot 2024-01-28 at 12.09.37 AM.png";
 import calc from "../../asset/Screenshot 2024-01-28 at 12.27.49 AM.png";
@@ -44,11 +45,7 @@ const MyPortfolio = () => {
               <div className="view--link">
                 <div className="text-sm portfolio--link">
                   <img className="btn-github-img--link" src={github} alt="" />
-                  <a
-                    className="portfolio--link--a"
-                    
-                    target="_blank"
-                  >
+                  <a className="portfolio--link--a" target="_blank">
                     <span>gitHub</span>
                   </a>
                 </div>
@@ -76,7 +73,8 @@ const MyPortfolio = () => {
               <div>
                 <h3 className="portfolio--section--title">myPortfolio</h3>
                 <p className="text-md">
-                Passionate Software Engineer with 2+ years of experience specializing in front-end development. 
+                  Passionate Software Engineer with 2+ years of experience
+                  specializing in front-end development.
                 </p>
               </div>
               <div className="view--link">
@@ -143,24 +141,22 @@ const MyPortfolio = () => {
             </div>
           </div>
         </div>
-
-        
       </div>
 
       <div className="portfolio--container-box">
-        
-
         <div className="portfolio--section--container">
           <div className="portfolio--section--card">
             <div className="portfolio--section--img">
-              <img src={screenshort} alt="" />
+              <img src={school} alt="" />
             </div>
             <div className="portfolio--section--card--content">
               <div>
-                <h3 className="portfolio--section--title">Mentor-Challenge</h3>
+                <h3 className="portfolio--section--title">
+                  EarlyBirds Schools
+                </h3>
                 <p className="text-md">
-                  Get your team in snyc, no matter your location. Streamline
-                  processes, create team rituals, and watch productivity soar.
+                  Empowering students to achieve excellence through innovation,
+                  dedication, and community.
                 </p>
               </div>
               <div className="view--link">
@@ -168,7 +164,7 @@ const MyPortfolio = () => {
                   <img className="btn-github-img--link" src={github} alt="" />
                   <a
                     className="portfolio--link--a"
-                    href="https://github.com/Iykecode93/mentor-challenge.git"
+                    href="https://github.com/Iykecode93/new"
                     target="_blank"
                   >
                     <span>gitHub</span>
@@ -178,7 +174,7 @@ const MyPortfolio = () => {
                   <img className="btn-github-img--link" src={eye} alt="" />
                   <a
                     className="portfolio--link--a"
-                    href="https://mentor-challenge.vercel.app/"
+                    href="https://earlybirdsschools.vercel.app/"
                     target="_blank"
                   >
                     <span>live</span>

@@ -124,7 +124,7 @@ function Footer() {
       <hr className="divider" />
       <div className="footer--content--container">
         <p className="footer--content">
-          COPYRIGHT @ 2024 JOHNBOSCO. ALL RIGHTS RESERVED
+          COPYRIGHT @ 2025 JOHNBOSCO. ALL RIGHTS RESERVED
         </p>
       </div>
     </footer>
